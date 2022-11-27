@@ -1,6 +1,6 @@
 rev :: [a] -> [a]
 rev [] = []
-rev (x:xs) = (rev xs) ++ [x]
+rev (h:t) = rev t ++ [h]
 
 -- or
 -- rev x = reverse x
